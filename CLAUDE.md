@@ -13,7 +13,7 @@ Leia só a seção da tarefa. Atualize ao mudar uma decisão, um comportamento o
 - Node 26, TypeScript executado direto (type stripping: **sem parameter properties nem enums**), `node:sqlite`, `node:test`, `web-push`. UI sem framework.
 - `npm start` (porta 8787, HOST 127.0.0.1) · `npm test` · `npx tsc --noEmit` · `npm run demo` (banco separado `data/demo.db`).
 - `data/` (banco, log, `vapid.json` com chave privada) e `.env` nunca vão para o git.
-- GitHub: https://github.com/ondeascoisasacontecem/Radar-SUltra (branch `main`; autor `ondeascoisasacontecem@users.noreply.github.com`). Push só funciona pelo painel Terminal (login do Git Credential Manager).
+- GitHub: https://github.com/ondeascoisasacontecem/Radar-SUltra (branch `main`; autor `ondeascoisasacontecem@users.noreply.github.com`). Login salvo no Git Credential Manager: `git push` funciona direto; se o login expirar, rodar o push pelo painel Terminal para a janela de login abrir.
 
 ## Mapa de arquivos
 | Assunto | Arquivo | Testes |
