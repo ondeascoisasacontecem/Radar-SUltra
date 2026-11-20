@@ -1,0 +1,17 @@
+# Servidor Linux sempre ligado (ex.: Raspberry Pi, VPS que você já tenha).
+# sudo cp deploy/radar-sultra.service /etc/systemd/system/ && sudo systemctl enable --now radar-sultra
+[Unit]
+Description=Radar SUltra (coletor + PWA)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=radar
+WorkingDirectory=/opt/radar-sultra
+EnvironmentFile=-/opt/radar-sultra/.env
+ExecStart=/usr/bin/node src/main.ts
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

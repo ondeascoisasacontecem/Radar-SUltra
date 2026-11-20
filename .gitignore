@@ -1,0 +1,6 @@
+node_modules/
+# banco SQLite, log e chaves VAPID (privadas) — nunca versionar
+data/
+.env
+.claude/
+*.tmp.html

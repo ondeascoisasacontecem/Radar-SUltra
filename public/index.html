@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Radar SUltra</title>
+  <meta name="theme-color" content="#111827">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/icons/icon-180.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <header class="top">
+    <h1>📡 Radar SUltra</h1>
+    <nav class="nav" aria-label="Principal">
+      <a href="#ofertas" data-route="ofertas"><span aria-hidden="true">🏷️</span> Ofertas</a>
+      <a href="#favoritos" data-route="favoritos"><span aria-hidden="true">☆</span> Favoritos</a>
+      <a href="#alertas" data-route="alertas"><span aria-hidden="true">🔔</span> Alertas <span id="badge" class="badge" hidden></span></a>
+    </nav>
+  </header>
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+  <main id="main" tabindex="-1"></main>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
